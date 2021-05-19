@@ -1,0 +1,156 @@
+{
+    "header": {
+        "search-placeholder": "Buscar producto o marca",
+        "cart-label": "Tienes {{totalProducts}} productos agregados en el carrito",
+        "cart-alt": "ícono del carrito de compras"
+    },
+    "footer": {
+        "info-label": "Información Obbro",
+        "copyright": "Copyright © 2019 Obbro SAS",
+        "city": "Medellín - Colombia"
+    },
+    "featured-companies": {
+        "trusted-company": "Empresas destacadas",
+        "see-more-link": "Ver más"
+    },
+    "featured-products": {
+        "title": "Productos destacados",
+        "see-more-link": "Ver más"
+    },
+    "nav": {
+        "official-companies": "Empresas Oficiales",
+        "offers": "Ofertas",
+        "about-us": "Acerca de",
+        "help": "Ayuda",
+        "shipping-address": "Elige una dirección",
+        "of": "de entrega",
+        "sing-up": "Regístrate",
+        "sing-in": "Ingresar",
+        "location": "Medellín - Antioquia",
+        "user": "David Henao",
+        "home":"Inicio"
+    },
+    "ads-block": {
+        "title": "Publicidad"
+    },
+    "type-title": {
+        "title": "Eléctricos"
+    },
+    "login": {
+        "email-placeholder": "Correo electrónico",
+        "facebook": "Facebook",
+        "password-placeholder": "Contraseña",
+        "register-by-email": "Registrate con tu email",
+        "reset-password": "Recuperar contraseña",
+        "sign-in-with": "Ingresar con",
+        "sign-in": "Ingresar",
+        "title": "Ingresar"
+    },
+    "sing-up": {
+        "name": "Nombre",
+        "last-name": "Apellido",
+        "email-placeholder": "Correo electrónico",
+        "password-placeholder": "Contraseña",
+        "password-confirm-placeholder": "Confirmar Contraseña",
+        "cellular": "Celular",
+        "register": "Registrar",
+        "title": "Regístrate"
+    },
+    "companies": {
+        "company": "Nombre de la empresa",
+        "see-more": "ver más"
+    },
+    "official-company": {
+        "title": "Empresas Destacadas"
+    },
+    "filter-product": {
+        "grid": "Cuadricula",
+        "filter1": "Filtro 1",
+        "filter2":"Filtro 2"
+    },
+    "filter-list-product": {
+        "title": "Ordenar publicaciones",
+        "subtitle":"Filtro",
+        "list": "Seguridad Industrial",
+        "categories": "Categorias"
+    },
+    "user-profile": {
+        "title": "Perfil",
+        "name": "Nombre: admin",
+        "email": "Email: admin@email.com",
+        "phone": "Celular: 3013456765",
+        "company": "Empresa: Epm",
+        "position": "Cargo Gerente",
+        "edit": "Editar"
+    },
+    "contact-us": {
+        "title": "Contáctenos",
+        "name": "Nombre y Apellido",
+        "email": "Mail",
+        "affair": "Asunto",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "city": "Ciudad",
+        "message": "Mensaje",
+        "send": "Enviar"
+    },
+    "sell-w-us": {
+        "title": "Vender con nosotros",
+        "name": "Nombre y Apellido",
+        "email": "Mail",
+        "company": "Nombre de la empresa",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "city": "Ciudad",
+        "message": "Mensaje",
+        "send": "Enviar"
+    },
+    "purchase-management": {
+        "pending-purchases":"Compras pendientes",
+        "orders-on-way": "Pedidos en camino",
+        "orders-delivered": "Pedidos entregados",
+        "budgets": "Cotizaciones",
+        "trace-guide": "RASTREAR Guía"
+    },
+    "trace-guide": {
+        "title": "Por favor, ingrese en este campo el número de guías",
+        "placeholder": "Ingrese el número de guía",
+        "trace-guide": "RASTREAR Guía"
+    },
+    "guide-not-located": {
+        "title": "Guía no localizada"
+    },
+    "guide-info": {
+        "order": "Orden",
+        "date": "12/04/2019",
+        "serial": "1556987663225",
+        "order-in-warehouse": "Pedido en bodega",
+        "city": "Medellín - Antioquia",
+        "total": "Total: $45.000"
+    },
+    "assigned-consultant": {
+        "message": "!Hola Juan¡",
+        "message2": "¿En qué te podemos ayudar?",
+        "alert": "¿Quieres hablar con un asesor?",
+        "speak": "Hablar ahora"
+    },
+    "payment": {
+        "title": "Datos de tu Págo",
+        "text-pse": "Debito a cuenta corriente o de ahorro",
+        "label-date": "Fecha",
+        "value-date": "Tuesday, sep 29, 2020",
+        "label-send": "Envío",
+        "value-send": "$ 7.830",
+        "label-total": "Total",
+        "value-total": "$114.930",
+        "date": "Lunes 10 de julio de 2019",
+        "delivery": "Entregar en: Envigado, Colombia",
+        "address": "Calle 46 Sur Cra. 66A 301 Int.",
+        "edit": "Editar dirección",
+        "cancel": "Cancelar",
+        "pay": "Pagar",
+        "taxes":"Impuestos",
+        "subtotal": "Subtotal",
+        "addressShipping":"Dirección de Entrega"
+    }
+ }

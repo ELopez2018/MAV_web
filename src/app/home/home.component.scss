@@ -1,11 +1,14 @@
-html,body {
+html,
+body {
   padding: 0;
 }
 .main-container {
-    background: #f4f6f9;
-  }
-  
-#title {
+  background: #f4f6f9;
+}
+
+// FORMATO MAYOR A 992PX
+@media (min-width: 992px) {
+  .title {
     font-family: Karla;
     font-size: 18px;
     font-style: normal;
@@ -13,5 +16,287 @@ html,body {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+    width: 100%;
+  }
+
+  .title2 {
+    width: 604px;
+    height: 134px;
+    left: 104px;
+    top: 288px;
+
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    width: 100%;
+  }
+
+  .img-main {
+    text-align: right;
+  }
+ 
+  .slogan {
+    padding-left: 104px;
+    padding-top: 81px;
+  }
+  .title3 {
+    width: 604px;
+    height: 81px;
+    left: 104px;
+    top: 446px;
+
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    width: 100%;
+  }
+
+  #btnConocemas {
+    // position: absolute;
+    width: 296px;
+    height: 56px;
+    left: 104px;
+    // top: 500px;
+    background: #386ae9;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+  }
+
+  .seccionII {
+    padding-top: 100px;
+    height: 410px;
+    text-align: center;
+    padding-bottom: 120px;
+  }
+
+  #sloganSecc2 {
+    width: 604px;
+    height: 76px;
+    left: 418px;
+    top: 912px;
+    margin: 0 auto;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .containerLogosMinis {
+    top: 0;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  #logoMT {
+    width: 212.39px;
+    height: 40px;
+  }
+  #logoANSV {
+    width: 134.14px;
+    height: 48px;
+  }
+  #logoST {
+    width: 72px;
+    height: 48px;
+  }
+  #logoPN {
+    width: 56px;
+    height: 56px;
+  }
+
+  #logoANI {
+    width: 133.54px;
+    height: 48px;
+  }
+  .CambioColorLogo {
+    mix-blend-mode: luminosity;
+    opacity: 0.8;
+  }
+  .cardPatners {
+    padding-left: 70px;
+    position: relative;
+  }
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    position: absolute;
+  }
+  #card1 {
+    top: 80px;
+  }
+
+  #card2 {
+    left: 350px;
+    top: 168px;
+  }
+
+  #card3 {
+    top: 380px;
+  }
+  #card4 {
+    left: 350px;
+    top: 474px;
+  }
+  .cardP {
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+
+  .seccionIII {
+    min-height: 2108px;
+  }
+  #expertos {
+    min-height: 848px;
+  }
+  #expertos--title3 {
+    margin-top: 60px;
+  }
+  .cardSize {
+    width: 250px;
+  }
+
+  .imgRight {
+    float: right;
+    right: 0;
+  }
+  .seguimento {
+    min-height: 800px;
+  }
+  #imgPlantilla {
+    height: 416px;
+    margin-right: 63px;
+  }
+  .seccionIV {
+    background-color: white;
+    display: block;
+  }
+  #title--howJob {
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #title--howJobSteps {
+    font-family: Spectral;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #usNumbers {
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  #usUsers {
+    font-family: Spectral;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .data {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #dataConaioner {
+    height: 177px;
+    width: 1022px;
+    margin: 0 auto;
+    border-radius: 0px;
+  }
+  .statics {
+    font-family: Spectral;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #386ae9;
+    margin: 0;
+    padding: 0;
+  }
+  #background {
+    background-image: url("../../assets/img/Img-3.png");
+    background-size: cover;
+    height: 384px;
+    min-width: 1440px;
+    left: 0px;
+    top: 6107px;
+    border-radius: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+  #cuentanos {
+    font-family: Spectral;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+  #callNow {
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  #callNow--number {
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+  }
+  #testimonialContainer {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .seccionVI {
+    height: 1142px;
+  }
+
+  .fomContactUs {
+    position: absolute;
+    margin-left: 100px;
+    bottom: 397px;
+    z-index: 10;
+
   }
   
+  #divSlogan {
+    height: 100px !important;
+  }
+}

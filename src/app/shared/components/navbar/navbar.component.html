@@ -1,22 +1,24 @@
-<div clas="container">
-    <div class="wrapper">
-        <div class="row nav-container line g-0 ">
-            <div class="col-sm-1 centrar text-center"> <img src="../../../../assets/img/logo.png" width="60%"  alt=""> </div>
-            <div class="col-sm-9 navbar">
-                <ul>
-                    <li> <a href="#">Inicio </a> </li>
-                    <li> <a href="#"> Miasesorvial </a></li>
+<div clas="container" #container >
+    <div class="wrapper" #mainContainer>
+        <div class="row nav-container line g-0 " #row> 
+            <div class="col-sm-2 centrar text-center" #logo>
+                <img src="../../../../assets/img/logoII.png" width="80%" alt="">
+            </div>
+            <div class="col-sm-8 navbar">
+                <ul #menu>
+                    <li> <a routerLink ="['/home']" routerLinkActive  >Inicio </a> </li>
+                    <li> <a  routerLink ="['/miasesorvial']"  routerLinkActive> Miasesorvial </a></li>
                     <li> <a href="#"> Especialidades </a></li>
                     <li> <a href="#"> Multimedia </a></li>
                     <li> <a href="#"> Aula virtual </a></li>
                     <li> <a href="#"> Blog </a></li>
                 </ul>
             </div>
-            <div class="col-sm-2 centrar">
-                inicio sesion
-                registrate
+            <div class="col-sm-2 centrar" #actions>
+                <span>INICIAR SESION</span>
+                <span>REGISTRATE</span>
+
             </div>
         </div>
     </div>
-
 </div>

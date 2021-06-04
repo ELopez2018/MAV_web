@@ -16,6 +16,7 @@
       "@constants/*": ["src/app/core/constants/*"],
       "@interceptors/*": ["src/app/core/interceptors/*"],
       "@shared/*": ["src/app/shared/*"],
+      "@mocks/*": ["src/app/core/mocks/*"],
   },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

@@ -6,7 +6,7 @@ body {
 
 .navbar {
   background: #f4f6f9;
-  padding: 30px 0 2px 0;
+  padding: 10px 0 2px 0;
   justify-content: center;
   & ul li {
     list-style: none;
@@ -27,7 +27,7 @@ body {
       content: "";
       height: 4px;
       width: 0;
-      background: blue;
+      background: #386ae9;
       position: absolute;
       left: 0;
       bottom: -20px;
@@ -43,7 +43,7 @@ body {
   border-bottom: 1px solid #e0e2e5;
 }
 .wrapper {
-  height: 80px;
+  height: 77px;
   background: #f4f6f9;
 }
 .nav-container {
@@ -51,9 +51,23 @@ body {
 }
 
 .centrar {
-  padding: 20px 0;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+  display: inline-flex;
+  padding: 15px 0;
+  justify-self: center;
+}
+img {
+  display: block;
+  margin: auto;
+}
+
+span {
+  padding-top: 8px;
+  padding-bottom: 0px;
+  margin-right: 5px;
+}
+
+span:hover {
+  background: #386ae9;
+  color: white;
+  cursor: pointer;
 }

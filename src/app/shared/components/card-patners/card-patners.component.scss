@@ -1,0 +1,24 @@
+
+
+ .star {
+  font-size: 24px;
+  color: #F8D20C;
+  margin-right: 4px;
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 250px;
+    height: 272px;
+    position: relative;
+    padding: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+
+  .star {
+    font-size: 24px;
+    color: #F8D20C;
+    margin-right: 4px;
+  }
+}

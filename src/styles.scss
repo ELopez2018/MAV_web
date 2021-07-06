@@ -4,7 +4,7 @@
 // Plus imports for other components in your app.
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
-@import '~video.js/dist/video-js.css';
+@import "~video.js/dist/video-js.css";
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -46,7 +46,6 @@ body {
   margin: 0;
 }
 body {
- 
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -65,7 +64,7 @@ body {
 }
 .cuadro394x387 {
   width: 394px;
-  height: 387px;;
+  height: 387px;
   background: #386ae9;
   position: absolute;
 }
@@ -89,4 +88,14 @@ body {
   position: absolute;
   bottom: 12px;
   z-index: 10;
+}
+
+.readMore {
+  font-family: Spectral;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
 }

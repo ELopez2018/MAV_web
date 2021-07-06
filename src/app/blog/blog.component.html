@@ -1,10 +1,25 @@
 <div class="main">
-    <h1 class="text-center pt-4">Vídeos de interés</h1>
+    <h1 class="text-center py-4">Enterate de nuestras últimas noticias</h1>
     <div class="row text-center justify-content-center align-content-center ">
-        <app-visor-video></app-visor-video>
-        <app-visor-video></app-visor-video>
-        <app-visor-video></app-visor-video>
-        <app-visor-video></app-visor-video>
+        <div class="col-sm-12 mb-4">
+            <app-card-blog-principal></app-card-blog-principal>
+        </div>
+    </div>
+    <div class="subMain">
+        <div class="row text-center justify-content-center align-content-center ">
+            <div class="col-sm-6 mb-4" *ngFor="let blog of blogsAll" >
+                <app-card-blog [blog]="blog" ></app-card-blog>
+            </div>
+            <!-- <div class="col-sm-6 mb-4">
+                <app-card-blog></app-card-blog>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <app-card-blog></app-card-blog>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <app-card-blog></app-card-blog>
+            </div> -->
+        </div>
     </div>
 
     <nav aria-label="Page navigation example">

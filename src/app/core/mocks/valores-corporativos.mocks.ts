@@ -25,7 +25,7 @@ export const ValoresCorporativosMocks: IPracticalAreas[] = [
   {
     id: 4,
     icon: '../../../assets/icons/valores/comiunicacion.png',
-    title: 'Cominucación',
+    title: 'Comunicación',
     description:
       'Facilitamos canales de comunicación eficaces para atender los requerimiento e inquietudes de nuestros clientes, con el fin de satisfacer de manera oportuna sus necesidades, consultas y solicitudes. ',
   },

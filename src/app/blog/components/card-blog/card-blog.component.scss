@@ -1,0 +1,38 @@
+.main {
+  width: 814px;
+  height: 400px;
+  margin: auto;
+}
+.mainCard {
+  width: 395px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-align: start;
+}
+.titleCunstom {
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.text {
+  font-family: Spectral;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bodyWrapper {
+  padding: 20px;
+}
+.imgCunstom {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

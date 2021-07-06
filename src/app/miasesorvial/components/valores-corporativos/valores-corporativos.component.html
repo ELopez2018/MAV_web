@@ -1,0 +1,7 @@
+<div class="ps-5">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let valor of valores" >
+            <app-card-valor-corporativo [valores]="valor" ></app-card-valor-corporativo>
+        </ng-template>
+    </owl-carousel-o>
+</div>

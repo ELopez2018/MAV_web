@@ -1,0 +1,158 @@
+.main-container {
+  background: #f4f6f9;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+  }
+  #valorescorp {
+    margin-top: 112px;
+    text-align: center;
+  }
+  #valores {
+    margin-top: 32px;
+    min-height: 855px;
+  }
+  .titleValores {
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  .title2 {
+    width: 604px;
+    height: 134px;
+    left: 104px;
+    top: 288px;
+
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    width: 100%;
+  }
+
+  .img-main {
+    text-align: right;
+    position: relative;
+    height: 687px;
+  }
+
+  .slogan {
+    padding-left: 104px;
+    padding-top: 81px;
+  }
+  .title3 {
+    width: 604px;
+    height: 81px;
+    left: 104px;
+    top: 446px;
+
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    width: 100%;
+  }
+
+  #btnConocemas {
+    // position: absolute;
+    width: 296px;
+    height: 56px;
+    left: 104px;
+    // top: 500px;
+    background: #386ae9;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+  }
+
+  .img1 {
+    z-index: 900;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .seccionII {
+    height: 931px;
+  }
+  .pd {
+    padding-top: 152px;
+  }
+  .img394 {
+    width: 394px;
+    height: 387px;
+    z-index: 900;
+    position: absolute;
+    left: 209px;
+    top: 152px;
+  }
+  #cuadroSeccII {
+    left: 169px;
+    top: 112px;
+  }
+  .relative {
+    position: relative;
+    height: 603px;
+  }
+  .textSeccII {
+    font-family: Spectral;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .marginSecIIRowII {
+    padding-left: 209px;
+  }
+
+  .seccionIII {
+    height: 660px;
+    background: #fafafa;
+  }
+  .cuadro394x596 {
+    top: -40px;
+    height: 596px;
+    width: 394px;
+    border-radius: 0px;
+    background: #386ae9;
+    right: 169px;
+    position: absolute;
+  }
+  .img394x596 {
+    width: 394px;
+    height: 596px;
+    z-index: 900;
+    right: 209px;
+    position: absolute;
+  }
+
+  .textMav {
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .marginMisionVision {
+    padding-top: 64px;
+    padding-left: 209px;
+  }
+}

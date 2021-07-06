@@ -103,24 +103,24 @@ export class HomeComponent implements OnInit {
 
 
     // SECCION II
-    gsap.from(this.mainContainerII.nativeElement, {
-      delay: 2.5,
-      duration: 1,
-      opacity: 0,
-      y: 100,
-    });
-    gsap.from(this.SecIIText1.nativeElement.childNodes, {
-      delay: 2.6,
-      duration: 0.5,
-      opacity: 0,
-      y: 20,
+    // gsap.from(this.mainContainerII.nativeElement, {
+    //   delay: 2.5,
+    //   duration: 1,
+    //   opacity: 0,
+    //   y: 100,
+    // });
+    // gsap.from(this.SecIIText1.nativeElement.childNodes, {
+    //   delay: 2.6,
+    //   duration: 0.5,
+    //   opacity: 0,
+    //   y: 20,
 
-    });
-    gsap.to(this.mainContainerII.nativeElement, {
-      delay: 3.5,
-      duration: 1,
-      opacity: 0,
-      y: 100,
-    });
+    // });
+    // gsap.to(this.mainContainerII.nativeElement, {
+    //   delay: 3.5,
+    //   duration: 1,
+    //   opacity: 0,
+    //   y: 100,
+    // });
   }
 }

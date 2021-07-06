@@ -6,53 +6,37 @@ body {
   background: #f4f6f9;
 }
 
+.relative {
+  position: relative;
+}
 // FORMATO MAYOR A 992PX
 @media (min-width: 992px) {
-  .title {
-    font-family: Karla;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 100%;
-  }
-
-  .title2 {
-    width: 604px;
-    height: 134px;
-    left: 104px;
-    top: 288px;
-
-    font-family: Spectral;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 120%;
-    width: 100%;
-  }
-
+  
   .img-main {
     text-align: right;
+    height: 530px;
   }
- 
+  .img1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   .slogan {
     padding-left: 104px;
-    padding-top: 81px;
+    padding-top: 90px;
   }
   .title3 {
     width: 604px;
-    height: 81px;
+    // height: 81px;
     left: 104px;
-    top: 446px;
+    // top: 446px;
 
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
-    width: 100%;
+    max-width: 100%;
   }
 
   #btnConocemas {
@@ -71,23 +55,20 @@ body {
   }
 
   .seccionII {
-    padding-top: 100px;
+    // padding-top: 100px;
     height: 410px;
     text-align: center;
     padding-bottom: 120px;
+    position: relative;
   }
 
   #sloganSecc2 {
-    width: 604px;
-    height: 76px;
-    left: 418px;
-    top: 912px;
     margin: 0 auto;
     font-family: Spectral;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
     line-height: 120%;
+    font-size: 32px;
   }
   .containerLogosMinis {
     top: 0;
@@ -151,7 +132,7 @@ body {
   }
 
   .seccionIII {
-    min-height: 2108px;
+    min-height: 1908px;
   }
   #expertos {
     min-height: 848px;
@@ -168,7 +149,7 @@ body {
     right: 0;
   }
   .seguimento {
-    min-height: 800px;
+    min-height: 600px;
   }
   #imgPlantilla {
     height: 416px;
@@ -239,15 +220,27 @@ body {
     padding: 0;
   }
   #background {
-    background-image: url("../../assets/img/Img-3.png");
-    background-size: cover;
-    height: 384px;
-    min-width: 1440px;
-    left: 0px;
-    top: 6107px;
-    border-radius: 0px;
-    align-items: center;
-    justify-items: center;
+    // background-image: url("../../assets/img/Img-3.png");
+    // background-size:contain;
+    // height: 384px;
+    // max-width: 90%;
+    // right: 0;
+    // top: 6107px;
+    // border-radius: 0px;
+    // align-items: center;
+    // justify-items: center;
+    overflow: hidden;
+    position: relative;
+
+  }
+  #container-background {
+    overflow: hidden;
+
+  }
+  #img_back {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
   }
   #cuentanos {
     font-family: Spectral;
@@ -293,9 +286,8 @@ body {
     margin-left: 100px;
     bottom: 397px;
     z-index: 10;
-
   }
-  
+
   #divSlogan {
     height: 100px !important;
   }

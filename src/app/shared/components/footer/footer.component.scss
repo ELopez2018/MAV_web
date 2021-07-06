@@ -3,7 +3,7 @@
   height: 524px;
   background: #111e2d;
   bottom: 0;
-  z-index: -1;
+  position: relative;
 }
 
 li {
@@ -48,6 +48,12 @@ li {
     color: #E9E9EE;
 }
 
-.footer-conatiner {
-  z-index: -5;
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(251, 255, 6) !important;
+  transform: scale(1.1);
 }

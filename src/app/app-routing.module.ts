@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'politicas-de-privacidad', loadChildren: () => import('./politicas-privacidad/politicas-privacidad.module').then(m => m.PoliticasPrivacidadModule) },
   { path: 'multimedia', loadChildren: () => import('./multimedia/multimedia.module').then(m => m.MultimediaModule) },
   { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+  { path: 'blog-articulo/:id', loadChildren: () => import('./blog/components/single-blog/single-blog.module').then(m => m.SingleBlogModule) },
   {
     path: '**',
     redirectTo: '/home',

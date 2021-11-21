@@ -11,7 +11,6 @@ body {
 }
 // FORMATO MAYOR A 992PX
 @media (min-width: 992px) {
-  
   .img-main {
     text-align: right;
     height: 530px;
@@ -24,6 +23,14 @@ body {
   .slogan {
     padding-left: 104px;
     padding-top: 90px;
+  }
+  .title2 {
+    font-family: Spectral;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
   }
   .title3 {
     width: 604px;
@@ -169,6 +176,7 @@ body {
     text-align: center;
   }
   #title--howJobSteps {
+    width: 80%;
     font-family: Spectral;
     font-size: 48px;
     font-style: normal;
@@ -176,6 +184,7 @@ body {
     line-height: 58px;
     letter-spacing: 0em;
     text-align: center;
+    margin: 0 auto;
   }
   #usNumbers {
     font-family: Karla;
@@ -231,11 +240,9 @@ body {
     // justify-items: center;
     overflow: hidden;
     position: relative;
-
   }
   #container-background {
     overflow: hidden;
-
   }
   #img_back {
     position: absolute;
@@ -290,5 +297,26 @@ body {
 
   #divSlogan {
     height: 100px !important;
+  }
+  .ajustes {
+    padding-right: 260px;
+    padding-top: 10px;
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .titulosSeccionhowJob {
+    font-family: Spectral;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 16px 0;
   }
 }

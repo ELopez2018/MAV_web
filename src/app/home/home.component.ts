@@ -4,6 +4,7 @@ import { IPracticalAreas } from '@interfaces/practical-areas.interface';
 import { PracticalAreasMock } from '@root/core/mocks/practical-area.mocks';
 import  { gsap }  from 'gsap';
 import { ScrollTrigger } from'gsap/ScrollTrigger';
+import { v4 as uuidv4 } from 'uuid';
 
 gsap.registerPlugin(ScrollTrigger);
 @Component({
@@ -34,7 +35,8 @@ export class HomeComponent implements OnInit {
   @ViewChild('logoANI',{static: true}) logoANI!: ElementRef<HTMLDivElement>;
 
   public especialidadesAll: IPracticalAreas[];
-  constructor( @Inject(DOCUMENT) private document: Document ) { 
+  public id = uuidv4();
+  constructor( @Inject(DOCUMENT) private document: Document ) {
     this.especialidadesAll= PracticalAreasMock
   }
 

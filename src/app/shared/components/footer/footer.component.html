@@ -1,49 +1,71 @@
 <footer>
-    <div class="footer-conatiner" #footerContainer>
-        <div class="row sections no-gutters" #footerRowI>
-            <div class="col-sm-3 ">
-                <div class="title-sectios-footer"><img src="../../../../assets/img/logoIII.png" width="80%" alt="">
-                </div>
-                <ul>
-                    <li> <span>Jorge Machado</span></li>
-                    <li>CEO - Fundador</li>
-                    <li>Teléfono: 313-8856-979 </li>
-                    <li>gerencia@miasesorvial.com</li>
-                </ul>
-            </div>
-            <div class="col-sm-3 pl-5r">
-                <div class="title-sectios-footer text-center">Mapa del Sitio</div>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Sobre nosotros</li>
-                    <li>Servicios</li>
-                    <li>Trabaja con nosotros</li>
-                </ul>
-            </div>
-            <div class="col-sm-3 pl-5r">
-                <p class="title-sectios-footer  text-center">Legal</p>
-                <ul>
-                    <li> <a routerLink="politicas-de-privacidad"> Política de privacidad</a></li>
-                    <li> <a routerLink="condiciones-de-uso">Términos y Condiciones de uso</a> </li>
-                </ul>
-            </div>
-            <div class="col-sm-3 pl-5r">
-                <div class="title-sectios-footer  text-center">Institucional</div>
-                <ul>
-                    <li> <a href="https://host11.bienvenidohosting.com:2096/" target="_blank">Correo Institucional</a>
-                    </li>
-                    <li> <a href="https://app.miasesorvial.com/">Inicio Sesión</a> </li>
-                </ul>
-            </div>
+  <div class="footer-conatiner" #footerContainer>
+    <div class="row sections no-gutters" #footerRowI>
+      <div class="col-sm-3 ">
+        <div class="title-sectios-footer"><img src="../../../../assets/img/logoIII.png" width="80%" alt="">
         </div>
-        <hr>
-        <div class="row" #footerRowII>
-            <div class="finFooter d-flex justify-content-between">
-                <p>Copyright © Mi Asesor Vial. Todos los derechos reservados</p>
-                <p><i class="fab fa-instagram-square marginSocial "></i> <i
-                        class="fab fa-facebook-square marginSocial"></i> <i class="fab fa-linkedin-in marginSocial"></i>
-                    <i class="fab fa-youtube-square marginSocial"></i></p>
-            </div>
-        </div>
+        <ul>
+          <li> <span>Jorge Machado</span></li>
+          <li>CEO - Fundador</li>
+          <li>Teléfono: 313-8856-979 </li>
+          <li>gerencia@miasesorvial.com</li>
+          <li>
+            <!-- =====================================================================
+          ///////////   Este es su botón de Pago Abierto ePayco   ///////////
+         ===================================================================== -->
+            <form id="frm_ePaycoCheckoutOpen" name="frm_ePaycoCheckoutOpen" method="POST"
+              action="https://secure.payco.co/checkoutopen.php">
+
+              <input name="p_cust_id_cliente" type="hidden" value="521521" />
+              <input name="p_key" type="hidden" value="042333dfbdaf20ffd7ea5e1fb633d3926d2c5642" />
+              <input name="p_id_factura" type="hidden" value="" />
+              <input name="p_description" type="hidden" value="SERVICIOS PROFESIONALES" />
+              <input name="p_detalle" type="hidden" value="SERVICIOS PROFESIONALES" />
+              <input name="p_referencia" type="hidden" value="1111-111-1111" />
+              <input name="p_test_request" type="hidden" value="true" />
+              <input name="p_url_respuesta" type="hidden" value="" />
+              <input name="p_url_confirmacion" type="hidden" value="" />
+              <input type="image" id="imagen" src="https://multimedia.epayco.co/dashboard/btns/btn11.png" alt="" />
+              <input type="hidden" id="idboton" name="idboton" value="42293" />
+
+            </form> <!-- ================================================================== -->
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 pl-5r">
+        <div class="title-sectios-footer text-center">Mapa del Sitio</div>
+        <ul>
+          <li>Inicio</li>
+          <li>Sobre nosotros</li>
+          <li>Servicios</li>
+          <li>Trabaja con nosotros</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 pl-5r">
+        <p class="title-sectios-footer  text-center">Legal</p>
+        <ul>
+          <li> <a routerLink="politicas-de-privacidad"> Política de privacidad</a></li>
+          <li> <a routerLink="condiciones-de-uso">Términos y Condiciones de uso</a> </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 pl-5r">
+        <div class="title-sectios-footer  text-center">Institucional</div>
+        <ul>
+          <li> <a href="https://host11.bienvenidohosting.com:2096/" target="_blank">Correo Institucional</a>
+          </li>
+          <li> <a href="https://app.miasesorvial.com/">Inicio Sesión</a> </li>
+        </ul>
+      </div>
     </div>
+    <hr>
+    <div class="row" #footerRowII>
+      <div class="finFooter d-flex justify-content-between">
+        <p>Copyright © Mi Asesor Vial. Todos los derechos reservados</p>
+        <p><i class="fab fa-instagram-square marginSocial "></i> <i class="fab fa-facebook-square marginSocial"></i> <i
+            class="fab fa-linkedin-in marginSocial"></i>
+          <i class="fab fa-youtube-square marginSocial"></i>
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>

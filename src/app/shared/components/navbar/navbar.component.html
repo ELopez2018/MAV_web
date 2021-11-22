@@ -1,24 +1,83 @@
-<div clas="container pt-4" #container >
+<div class="my-navbar">
+  <div clas="container pt-4" #container>
     <div class="wrapper pt-4" #mainContainer>
-        <div class="row nav-container line g-0 mb-4"  #row> 
-            <div class="col-sm-3 centrar text-center" #logo>
-                <img src="../../../../assets/img/logoII.png" width="110%" alt="">
-            </div>
-            <div class="col-sm-7 navbar">
-                <ul #menu>
-                    <li> <a routerLink ="/home" routerLinkActive  >Inicio </a> </li>
-                    <li> <a  routerLink ="/miasesorvial"  routerLinkActive> Miasesorvial </a></li>
-                    <li> <a  routerLink ="/especialidades"> Especialidades </a></li>
-                    <li> <a routerLink ="/multimedia"> Multimedia </a></li>
-                    <li> <a routerLink ="/aula-virtual"> Aula virtual </a></li>
-                    <li> <a  routerLink ="/blog"> Blog </a></li>
-                </ul>
-            </div>
-            <div class="col-sm-2 centrar" #actions>
-                <span>INICIAR SESION</span>
-                <span>REGISTRATE</span>
-
-            </div>
+      <div class="row nav-container line g-0 mb-4" #row>
+        <div class="col-sm-3 centrar text-center" #logo>
+          <img src="../../../../assets/img/logoII.png" width="110%" alt="">
         </div>
+        <div class="col-sm-7 menu">
+          <ul #menu>
+            <li> <a routerLink="/home" routerLinkActive>Inicio </a> </li>
+            <li> <a routerLink="/miasesorvial" routerLinkActive> Nosotros </a></li>
+            <li> <a routerLink="/especialidades"> Especialidades </a></li>
+            <li> <a routerLink="/multimedia"> Multimedia </a></li>
+            <li> <a routerLink="/aula-virtual"> Aula virtual </a></li>
+            <li> <a routerLink="/blog"> Blog </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 centrar" #actions>
+          <span>INICIAR SESION</span>
+          <span>REGISTRATE</span>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+
+<div class="my-navbar-responsive">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="../../../../assets/img/logo.png" width="50px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span (click)="toggleMenu()" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div [class]="classMenuResponsive">
+  <div class="col-sm-11 menu-responsive">
+    <ul>
+      <li (click)="toggleMenu()" > <a routerLink="/home" routerLinkActive>Inicio </a> </li>
+      <li (click)="toggleMenu()"> <a routerLink="/miasesorvial" routerLinkActive> Nosotros </a></li>
+      <li (click)="toggleMenu()"> <a routerLink="/especialidades"> Especialidades </a></li>
+      <li (click)="toggleMenu()"> <a routerLink="/multimedia"> Multimedia </a></li>
+      <li (click)="toggleMenu()"> <a routerLink="/aula-virtual"> Aula virtual </a></li>
+      <li (click)="toggleMenu()"> <a routerLink="/blog"> Blog </a></li>
+    </ul>
+  </div>
+</div>
+

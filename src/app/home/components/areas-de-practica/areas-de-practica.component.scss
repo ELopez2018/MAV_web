@@ -1,0 +1,26 @@
+@import '../../../../assets/styles/variables.scss';
+.areapractica {
+    background-color: $color2;
+    text-align: center;
+    padding: 10px;
+    &__title {
+        font-family: $font2;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.7rem;
+        line-height: 150%;
+    }
+    &__title2 {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 120%;
+    }
+    &__title3 {
+      font-family: $font2;
+      font-style: normal;
+      font-size: 0.7rem;
+      line-height: 150%;
+    }
+}

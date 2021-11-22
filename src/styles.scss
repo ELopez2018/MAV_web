@@ -1,3 +1,4 @@
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
@@ -5,6 +6,7 @@
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import "~video.js/dist/video-js.css";
+@import "./assets/styles/variables.scss";
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -55,17 +57,16 @@ body {
 }
 
 .cuadro {
-  width: 484px;
-  height: 528px;
+  width:100%;
+  height: auto;
   right: 0;
   bottom: 0;
-  background: #386ae9;
-  position: absolute;
+  background: $color3;
 }
 .cuadro394x387 {
   width: 394px;
   height: 387px;
-  background: #386ae9;
+  background: $color3 ;
   position: absolute;
 }
 .title {
@@ -102,4 +103,11 @@ body {
 
 .pt-6 {
   padding-top: 90px;
+}
+@media screen and (min-width: 600px) {
+  .cuadro {
+    width: 484px;
+    height: 528px;
+    background: $color3;
+  }
 }

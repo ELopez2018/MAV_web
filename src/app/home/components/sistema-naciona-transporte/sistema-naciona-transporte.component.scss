@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/variables.scss";
+.snt {
+    padding: 20px;
+    text-align: center;
+    background-color:$color2;
+    &__title {
+      font-family: $font1;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 120%;
+    }
+}

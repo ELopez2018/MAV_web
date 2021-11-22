@@ -1,6 +1,6 @@
 import { IPracticalAreas } from '@interfaces/practical-areas.interface';
 
-export const ValoresCorporativosMocks: IPracticalAreas[] = [
+export const ValoresCorporativosMocks: any[] = [
   {
     id: 1,
     icon: '../../../assets/icons/valores/excelencia.png',

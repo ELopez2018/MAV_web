@@ -1,0 +1,19 @@
+@import "../../../../assets/styles/variables.scss";
+.main {
+  background-color: $color1;
+
+    &__slogan {
+        display: none;
+    }
+    &__img-container {
+      position: relative;
+    }
+    &__img1 {
+      z-index: 1;
+      position: relative;
+    }
+}
+.cuadro {
+  top:60px;
+  position: absolute;
+}

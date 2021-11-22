@@ -1,0 +1,11 @@
+@import '../../../../assets/styles/variables.scss';
+.clh {
+    background-color: $color2;
+    &__title {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 120%;
+    }
+}

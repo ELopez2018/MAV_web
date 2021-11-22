@@ -1,38 +1,72 @@
-@media (min-width: 992px) {
-  .card {
-    width: 290px;
-    height: 224px;
-    padding: 24px;
-    background: #ffffff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
+@import '../../../../assets/styles/variables.scss';
 
-  .imgEspeci {
+.card {
+    width:minmax(96%, 395px);
+    height: 344px;
+    padding-top: 24px;
+    padding-right: 24px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 20px 0;
+    overflow: hidden;
+    &__title {
+        padding-top: 5px;
+        font-family: $font1;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+.imgEspeci {
     width: 40px;
     height: 40px;
-  }
-  .star {
-    font-size: 24px;
-    color: #f8d20c;
-    margin-right: 4px;
-  }
-  .card-text {
-    font-family: Karla;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .card-title {
-    font-family: Spectral;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    
-  }
+}
+ul {
+    text-align: justify;
+    margin: 0;
+    li {
+        margin-bottom: 5px;
+        font-family: $font2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+@media (min-width: 992px) {
+    .card {
+        width: 290px;
+        height: 224px;
+        padding: 24px;
+        background: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .imgEspeci {
+        width: 40px;
+        height: 40px;
+    }
+    .star {
+        font-size: 24px;
+        color: #f8d20c;
+        margin-right: 4px;
+    }
+    .card-text {
+        font-family: Karla;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .card-title {
+        font-family: Spectral;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 }

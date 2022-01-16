@@ -1,74 +1,119 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family:  Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+.my-navbar {
+    display: none;
+}
+.my-navbar-responsive {
+    display: block;
 }
 
-.navbar {
-  background: #f4f6f9;
-  padding: 10px 0 2px 0;
-  justify-content: center;
-  & ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+.menu-responsive {
+    & ul li {
+        position: relative;
+        margin: 8px 0;
+        & a {
+          font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 100%;
+          text-decoration: none;
+          color: black;
+      }
 
-    & a {
-      font-family:  Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 100%;
-      text-decoration: none;
-      color: black;
+      &:hover {
+        background-color: gainsboro;
+      }
     }
-    & ::before {
-      content: "";
-      height: 4px;
-      width: 0;
-      background: #386ae9;
-      position: absolute;
-      left: 0;
-      bottom: -20px;
-      transition: 0.3s ease-out;
+
+}
+.hide {
+    display: none;
+}
+@media screen and (min-width: 600px) {
+    .my-navbar-responsive {
+        display: none;
     }
-    & :hover::before {
-      position: absolute;
-      width: 100%;
+    .my-navbar {
+        display: initial;
+        z-index: 999;
     }
-  }
-}
-.line {
-  border-bottom: 1px solid #e0e2e5;
-}
-.wrapper {
-  height: 140px;
-  background: #f4f6f9;
-}
-.nav-container {
-  background: #f4f6f9;
-}
+    .row {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      left: 5px;
+      padding: 10px;
+      background-color: white;
+      z-index: 999;
+      min-width: 60%;
+    }
+    .menu {
+        background: #f4f6f9;
+        padding: 30px 0 2px 0;
+        justify-content: center;
+        & ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
 
-.centrar {
-  display: inline-flex;
-  padding: 15px 0;
-  justify-self: center;
-}
-img {
-  display: block;
-  margin: auto;
-}
+            & a {
+                font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 100%;
+                text-decoration: none;
+                color: black;
+            }
+            & ::before {
+                content: '';
+                height: 4px;
+                width: 0;
+                background: #386ae9;
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+                transition: 0.3s ease-out;
+            }
+            & :hover::before {
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+    .line {
+        border-bottom: 1px solid #e0e2e5;
+    }
+    .wrapper {
+        background: #f4f6f9;
+    }
+    .nav-container {
+        background: #f4f6f9;
+    }
 
-span {
-  padding-top: 8px;
-  padding-bottom: 0px;
-  margin-right: 5px;
-}
+    .centrar {
+        display: inline-flex;
+        padding: 20px 0;
+        justify-self: center;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
 
-span:hover {
-  background: #386ae9;
-  color: white;
-  cursor: pointer;
+    span {
+        padding-top: 8px;
+        padding-bottom: 0px;
+        margin-right: 5px;
+    }
+
+    span:hover {
+        background: #386ae9;
+        color: white;
+        cursor: pointer;
+    }
 }

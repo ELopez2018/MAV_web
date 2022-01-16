@@ -1,0 +1,88 @@
+@import '../../../../assets/styles/variables.scss';
+* {
+  font-size:$font2 ;
+}
+.main {
+
+    background-color: $color1;
+    &__container {
+      background-color: $color1;
+    }
+
+    &__slogan {
+        display: none;
+    }
+    &__img-container {
+        position: relative;
+
+    }
+    &__img1 {
+        z-index: 1;
+        position: relative;
+        float: right;
+        height: 100%;
+    }
+    &__slogan-responsive,
+    &__slogan-responsiveII {
+        padding-left: 20px;
+        display: block;
+        position: absolute;
+        top: 70px;
+        font-family: $font1;
+        font-size: 1rem;
+        font-weight: bold;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        left: 10px;
+        text-shadow: 2px 2px 2px rgb(156, 156, 247);
+    }
+    &__slogan-responsiveII {
+        top: initial;
+        bottom: 10px;
+    }
+}
+.cuadro {
+    top: 60px;
+    position: absolute;
+}
+@media screen and (min-width: 600px) {
+    .main {
+      display: initial;
+
+      &__container {
+        background-color: $color1;
+      }
+        &__slogan {
+            display: initial;
+            padding-top: 74px;
+            padding-left: 104px;
+        }
+        &__title {
+            font-family: $font2;
+            font-weight: 400;
+            color: black;
+        }
+        &__subtitle {
+            font-family: $font1;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: black;
+        }
+        &__slogan-responsive, &__slogan-responsiveII {
+          display: none;
+        }
+        &__img1 {
+          height: 580px;
+          z-index: 1;
+          position: relative;
+          float: right;
+          top: 35px;
+
+      }
+    }
+    .cuadro {
+      top: initial;
+      bottom: 0;
+  }
+}

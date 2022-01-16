@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/variables.scss';
+.template {
+    overflow: hidden;
+    font-family: $font2;
+    text-align: center;
+    background-color: $color;
+    padding: 20px 5%;
+    &__img1 {
+        display: none;
+    }
+    &__title,
+    &__text {
+        font-family: $font2;
+        font-weight: 400;
+    }
+    &__subtitle {
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .template {
+        overflow: hidden;
+        font-family: $font2;
+        text-align: left;
+        background-color: $color;
+        padding: 138px 104px;
+        &__subtitle {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+        }
+        &__text {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+        }
+        &__img{
+
+          float: right;
+
+        }
+    }
+}

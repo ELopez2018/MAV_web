@@ -1,0 +1,19 @@
+<div class="areapractica">
+  <div class="row">
+    <div class="col-sm-8">
+
+      <p class="areapractica__title">AREAS DE PRÁCTICA</p>
+      <p class="areapractica__title2 description ">Ejercemos jurídica y técnicamente en áreas del derecho, en las que hemos
+        acumulado experiencia a través del ejercicio profesional. Especialmente en: Procesos PENALES, CIVILES y
+        ADMINISTRATIVOS derivados de los Accidentes de Tránsito. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 " *ngFor="let especialidad of especialidadesAll">
+      <div >
+        <app-card-practice [especialidad]="especialidad" width="100%">
+        </app-card-practice>
+      </div>
+    </div>
+  </div>
+</div>

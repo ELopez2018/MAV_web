@@ -1,0 +1,39 @@
+@import '../../../../assets/styles/variables.scss';
+.snt {
+    padding: 20px;
+    text-align: center;
+    background-color: $color2;
+    overflow: hidden;
+    &__title {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 120%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .snt {
+      overflow: hidden;
+      background-color: $color2;
+      height: 378px;
+        padding-top: 87px;
+        &__title {
+          margin: 0 auto;
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+        }
+        &__logo-container {
+          margin-top: 74px;
+        }
+    }
+    .CambioColorLogo {
+      height: 48px;
+      width: auto;
+      margin: 0 135px 0 0;
+      filter: grayscale(100%);
+    }
+}

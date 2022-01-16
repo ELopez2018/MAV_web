@@ -1,6 +1,6 @@
 import { IPracticalAreas } from "@interfaces/practical-areas.interface";
 
-export const BlogsMock: IPracticalAreas[] = [
+export const BlogsMock: any[] = [
     {
         id: 1,
         icon: '../../../assets/mocks/blog/1.png',

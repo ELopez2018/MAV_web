@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SliderTestimonialComponent } from './components/slider-testimonial/slider-testimonial.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormContactUsComponent } from './components/form-contact-us/form-contact-us.component';
+import { PayOnlineComponent } from './components/pay-online/pay-online.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { FormContactUsComponent } from './components/form-contact-us/form-contac
     TestimonialCardComponent,
     FooterComponent,
     SliderTestimonialComponent,
-    FormContactUsComponent
+    FormContactUsComponent,
+    PayOnlineComponent
   ],
   exports: [
     NavbarComponent,
@@ -40,7 +42,8 @@ import { FormContactUsComponent } from './components/form-contact-us/form-contac
     FooterComponent,
     SliderTestimonialComponent,
     CarouselModule,
-    FormContactUsComponent
+    FormContactUsComponent,
+    PayOnlineComponent
 
   ],
 })

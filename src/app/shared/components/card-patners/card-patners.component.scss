@@ -1,24 +1,22 @@
-
-
- .star {
-  font-size: 24px;
-  color: #F8D20C;
-  margin-right: 4px;
+.star {
+    font-size: 24px;
+    color: #f8d20c;
+    margin-right: 4px;
 }
 
-@media (min-width: 992px) {
-  .card {
-    width: 250px;
-    height: 272px;
-    position: relative;
-    padding: 32px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
+@media screen and (min-width: 600px) {
+    .card {
+      box-sizing: border-box;
+        width: 250px;
+        height: 221px;
+        position: relative;
+        padding: 17px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 
-
-  .star {
-    font-size: 24px;
-    color: #F8D20C;
-    margin-right: 4px;
-  }
+    .star {
+        font-size: 24px;
+        color: #f8d20c;
+        margin-right: 4px;
+    }
 }

@@ -1,0 +1,93 @@
+@import '../../../../assets/styles/variables.scss';
+.pay-online {
+    height: 39px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    &__button {
+        margin: 2px 10px 0;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 16px;
+        height: 33px;
+        color: white;
+        background: #111e2d;
+    }
+    &__phone {
+        font-family: $font2;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 17px;
+        color: #111e2d;
+        opacity: 0.7;
+        margin-left: 10px;
+    }
+    &__phone {
+        font-size: 14px;
+    }
+}
+.fab,
+.fas {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: $color3;
+    line-height: 1.5rem;
+}
+.fab.fa-instagram-square,
+.fab.fa-facebook-square,
+.fab.fa-linkedin-in,
+.fab.fa-youtube-square {
+    display: none;
+}
+@media (min-width: 992px) {
+    .fab.fa-instagram-square,
+    .fab.fa-facebook-square,
+    .fab.fa-linkedin-in,
+    .fab.fa-youtube-square {
+        display: initial;
+        padding-top: 5px;
+    }
+    .pay-online {
+        height: 39px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: calc(100% - 303px);
+
+        &__button {
+            margin: 0 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 16px;
+            position: absolute;
+            height: 33px;
+            color: white;
+            background: #111e2d;
+        }
+        &__phone {
+            font-family: $font2;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 17px;
+            color: #111e2d;
+            opacity: 0.7;
+            margin-left: 10px;
+        }
+        &__social {
+          padding-top: 8px;
+        }
+    }
+    .fab,
+    .fas {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        margin-left: 20px;
+        color: $color3;
+        line-height: 1.5rem;
+    }
+
+}

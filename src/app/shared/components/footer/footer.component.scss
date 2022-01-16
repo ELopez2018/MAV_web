@@ -1,59 +1,80 @@
-.footer-conatiner {
-  width: 100%;
-  height: 524px;
-  background: #111e2d;
-  bottom: 0;
-  position: relative;
-}
-
-li {
-  font-family: Karla;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 150%;
-  text-align: left;
-  color: white;
-  list-style: none;
-  opacity: 0.7;
-  font-weight:lighter;
-  margin-bottom: 20px;
-}
-
-
-.sections {
-  padding: 224px 220px 0px 220px;
-}
-
-.title-sectios-footer {
-    margin-bottom: 20px;
+@import '../../../../assets/styles/variables.scss';
+.footer {
+    overflow: hidden;
+    padding-top: 60px;
+    width: 100%;
+    background: #111e2d;
+    bottom: 0;
+    position: relative;
     color: white;
+    &__footer {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+.fab {
+    font-size: 3rem;
+    margin-left: 20px;
+    color: #e9e9ee;
 }
 
-.pl-5r {
-   padding-left: 2rem; 
-}
-.finFooter {
-    height: 78px;
-    border-top: 1px solid rgba(255, 247, 247, 0.342);
-    width: 80%;
-    margin: 0 auto;
-    color: white;
-    opacity: 0.7;
-    padding-top: 20px;
-}
+@media screen and (min-width: 600px) {
+    .footer {
+        width: 100%;
+        height: 524px;
+        background: #111e2d;
+        bottom: 0;
+        position: relative;
+    }
 
-.marginSocial {
-    font-size: 20px;
-    margin-left: 10px ;
-    color: #E9E9EE;
-}
+    li {
+        font-family: Karla;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: left;
+        color: white;
+        list-style: none;
+        opacity: 0.7;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
 
+    .sections {
+        padding: 224px 220px 0px 220px;
+    }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(251, 255, 6) !important;
-  transform: scale(1.1);
+    .title-sectios-footer {
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .pl-5r {
+        padding-left: 2rem;
+    }
+    .finFooter {
+        height: 78px;
+        border-top: 1px solid rgba(255, 247, 247, 0.342);
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+        opacity: 0.7;
+        padding-top: 20px;
+    }
+
+    .fab {
+        font-size: 20px;
+        margin-left: 10px;
+        color: #e9e9ee;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(251, 255, 6) !important;
+        transform: scale(1.1);
+    }
 }

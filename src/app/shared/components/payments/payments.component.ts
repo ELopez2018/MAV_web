@@ -52,7 +52,19 @@ export class PaymentsComponent implements OnInit {
         this.showFields();
         this.setValues();
     }
-
+    reset() {
+        this.verCodigo = true;
+        this.verTipoDoc = true;
+        this.verNumeroDoc = true;
+        this.verNameBilling = true;
+        this.verNameConcepto = true;
+        this.verDescripcion = true;
+        this.verTelefono = false;
+        this.verDireccion = false;
+        this.verSubtotal = false;
+        this.verTax = false;
+        this.verTotal = true;
+    }
     initForm() {
         // const codigo = uuidv4();
         this.form = this.fb.group({
@@ -103,7 +115,6 @@ export class PaymentsComponent implements OnInit {
     }
 
     public showFields() {
-        console.log(this.paymentsService.values.invoice);
         this.verCodigo = this.paymentsService.show.verCodigo;
         this.verTipoDoc = this.paymentsService.show.verTipoDoc;
         this.verNumeroDoc = this.paymentsService.show.verNumeroDoc;
@@ -119,6 +130,15 @@ export class PaymentsComponent implements OnInit {
 
     public setValues() {
         const codigo = this.paymentsService.values.invoice || Date.now();
+        const values = this.paymentsService.values;
         this.form.get('invoice')?.setValue(codigo);
+        this.form.get('name')?.setValue(values.name);
+        this.form.get('description')?.setValue(values.description);
+        this.form.get('name_billing')?.setValue(values.name_billing);
+        this.form.get('address_billing')?.setValue(values.address_billing);
+        this.form.get('type_doc_billing')?.setValue(values.type_doc_billing);
+        this.form.get('tax_base')?.setValue(values.tax_base);
+        this.form.get('tax')?.setValue(values.tax);
+        this.form.get('amount')?.setValue(values.amount);
     }
 }

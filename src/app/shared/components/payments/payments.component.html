@@ -3,7 +3,8 @@
     <div class="payments__form" [formGroup]="form">
       <div class="row">
         <div class="col-sm-6">
-          <h3>Formulario de Pagos Online</h3>
+          <img src="../../../../assets/img/logoII.png" width="50%" alt="">
+          <h3>Formulario de Pagos</h3>
         </div>
         <div class="col-sm-6 payments__code">
           <div class="alinear">
@@ -17,8 +18,8 @@
       </div>
       <div class="payments__form-data">
         <div class="row">
-          <div class="col-sm-2">
-            <mat-form-field class="payments__form-tipo-doc" appearance="fill" *ngIf="verTipoDoc">
+          <div class="col-sm-2" *ngIf="verTipoDoc">
+            <mat-form-field class="payments__form-tipo-doc" appearance="fill" >
               <mat-label>Tipo</mat-label>
               <mat-select formControlName="type_doc_billing">
                 <mat-option value="cc">C.C.</mat-option>
@@ -27,14 +28,14 @@
               </mat-select>
             </mat-form-field>
           </div>
-          <div class="col-sm-3">
-            <mat-form-field appearance="fill" floatLabel="always" *ngIf="verNumeroDoc">
+          <div class="col-sm-3" *ngIf="verNumeroDoc">
+            <mat-form-field appearance="fill" floatLabel="always" >
               <mat-label>Numero de Documento</mat-label>
               <input matInput formControlName="number_doc_billing" type="number" class="example-right-align">
             </mat-form-field>
           </div>
-          <div class="col-sm-7">
-            <mat-form-field class="payments__form-name-billing" appearance="fill" floatLabel="always" *ngIf="verNameBilling">
+          <div class="col" *ngIf="verNameBilling">
+            <mat-form-field class="payments__form-name-billing" appearance="fill" floatLabel="always" >
               <mat-label>Nombres y Apellidos</mat-label>
               <input formControlName="name_billing" matInput type="text">
               <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
@@ -44,16 +45,16 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4">
-            <mat-form-field class="payments__form-name" appearance="fill" floatLabel="always" *ngIf="verNameConcepto">
+          <div class="col-sm-4"  *ngIf="verNameConcepto">
+            <mat-form-field class="payments__form-name" appearance="fill" floatLabel="always">
               <mat-label>Concepto</mat-label>
               <input formControlName="name" matInput type="text">
               <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
               <!-- <mat-hint>Hint</mat-hint> -->
             </mat-form-field>
           </div>
-          <div class="col-sm-8">
-            <mat-form-field class="payments__form-descrip" appearance="fill" floatLabel="always" *ngIf="verDescripcion">
+          <div class="col-sm-8" *ngIf="verDescripcion">
+            <mat-form-field class="payments__form-descrip" appearance="fill" floatLabel="always" >
               <mat-label>Descripcion</mat-label>
               <input formControlName="description" matInput type="text" >
               <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
@@ -61,17 +62,17 @@
             </mat-form-field>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <mat-form-field appearance="fill" *ngIf="verTelefono">
+        <div class="row" >
+          <div class="col-sm-4"  *ngIf="verTelefono">
+            <mat-form-field appearance="fill">
               <mat-label>Telefono</mat-label>
               <input type="tel" formControlName="mobilephone_billing" matInput>
               <mat-icon matSuffix>phone</mat-icon>
               <!-- <mat-hint>Include area code</mat-hint> -->
             </mat-form-field>
           </div>
-          <div class="col-sm-8">
-            <mat-form-field appearance="fill" floatLabel="always" class="payments__form-name" *ngIf="verDireccion" >
+          <div class="col-sm-8" *ngIf="verDireccion">
+            <mat-form-field appearance="fill" floatLabel="always" class="payments__form-name" >
               <mat-label>Direcciòn</mat-label>
               <input formControlName="address_billing" matInput type="text">
               <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
@@ -105,7 +106,7 @@
 
               <mat-form-field appearance="fill" floatLabel="always"*ngIf="verTotal">
                 <mat-label>Monto</mat-label>
-                <input matInput formControlName="amount" type="number" class="example-right-align" placeholder="0">
+                <input  matInput formControlName="amount" type="number" class="example-right-align" placeholder="0">
                 <span matPrefix>$&nbsp;</span>
                 <span matSuffix>.00</span>
               </mat-form-field>

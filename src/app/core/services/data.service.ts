@@ -21,9 +21,8 @@ export class DataService {
         return this.http
             .get<ServicesTypesModel[]>(this.urlApi + 'getServicesTypes')
             .pipe(
-                map((resp) => {
-                    console.log(resp);
-                    return resp;
+                map((resp: any) => {
+                    return resp.data;
                 })
             );
     }
@@ -32,9 +31,8 @@ export class DataService {
         return this.http
             .get<ServicesTypesModel[]>(this.urlApi + 'getrequestTypes')
             .pipe(
-                map((resp) => {
-                    console.log(resp);
-                    return resp;
+                map((resp: any) => {
+                    return resp.data;
                 })
             );
     }

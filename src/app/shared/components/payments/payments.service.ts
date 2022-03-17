@@ -68,15 +68,15 @@ export class PaymentsService {
         this.values.address_billing = value;
         this.setValues();
     }
-    setTax_baseValue(value: string) {
+    setTax_baseValue(value: number) {
         this.values.tax_base = value;
         this.setValues();
     }
-    setTaxValue(value: string) {
+    setTaxValue(value: number) {
         this.values.tax = value;
         this.setValues();
     }
-    setAmountValue(value: string) {
+    setAmountValue(value: number) {
         this.values.amount = value;
         this.setValues();
     }
@@ -95,6 +95,42 @@ export class PaymentsService {
             verSubtotal: this.values.tax_base !== null ? true : false,
             verTax: this.values.tax !== null ? true : false,
             verTotal: this.values.amount !== null ? true : false,
+        };
+    }
+
+    reset() {
+        this.show.verCodigo = true;
+        this.show.verTipoDoc = true;
+        this.show.verNumeroDoc = true;
+        this.show.verNameBilling = true;
+        this.show.verNameConcepto = true;
+        this.show.verDescripcion = true;
+        this.show.verTelefono = false;
+        this.show.verDireccion = false;
+        this.show.verSubtotal = false;
+        this.show.verTax = false;
+        this.show.verTotal = true;
+        this.values = {
+            invoice: null,
+            name: null,
+            description: null,
+            name_billing: null,
+            address_billing: null,
+            type_doc_billing: null,
+            mobilephone_billing: null,
+            number_doc_billing: null,
+            amount: null,
+            tax_base: null,
+            tax: null,
+            extra1: null,
+            extra2: null,
+            extra3: null,
+            external: null,
+            lang: null,
+            country: null,
+            currency: null,
+            confirmation: null,
+            response: null,
         };
     }
 }

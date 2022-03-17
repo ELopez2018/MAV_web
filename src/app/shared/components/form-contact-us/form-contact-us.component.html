@@ -28,14 +28,14 @@
         <div class="form-group mb-2">
           <select formControlName="request_type_id" class="form-control" name="tipo_solicitud" id="tipo_solicitud">
             <option value=null>Tipo de Solicitud</option>
-            <option value="{{ request }}" *ngFor="let request of requestTypes" >{{request.descripcion}}</option>
+            <option value="{{ request.id }}" *ngFor="let request of requestTypes" >{{request.descripcion}}</option>
           </select>
         </div>
 
         <div class="form-group mb-2">
-          <select formControlName="service_type_id" class="form-control" name="tipo_solicitud" id="tipo_solicitud">
+          <select formControlName="service_type_id" class="form-control" name="tipo_servicio" id="tipo_servicio">
             <option value=null >Tipo de Servicio</option>
-            <option value="{{ service }}" *ngFor="let service of servicesTypes" >{{service.descripcion}}</option>
+            <option value="{{ service.id }}" *ngFor="let service of servicesTypes" >{{service.descripcion}}</option>
           </select>
         </div>
 

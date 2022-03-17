@@ -20,9 +20,9 @@ export interface IPaymentsValues {
     type_doc_billing: string | null;
     mobilephone_billing: string | null;
     number_doc_billing: string | null;
-    amount: string | null;
-    tax_base: string | null;
-    tax: string | null;
+    amount: number | null;
+    tax_base: number | null;
+    tax: number | null;
     extra1: string | null;
     extra2: string | null;
     extra3: string | null;

@@ -41,7 +41,7 @@ export class FormContactUsComponent implements OnInit {
             this.requestTypes = requestTypes;
         });
         this.dataService.getServicesTypes().subscribe((servicesTypes) => {
-            this.requestTypes = servicesTypes;
+            this.servicesTypes = servicesTypes;
         });
     }
     public createForm(): void {
@@ -69,17 +69,27 @@ export class FormContactUsComponent implements OnInit {
     }
 
     public send(): void {
-        // this.paymentsService.setInvoiceValue('1000');
-        this.paymentsService.show.verCodigo = true;
-        const dialogRef = this.dialog.open(PaymentsComponent);
-        dialogRef.afterClosed().subscribe((result) => {
-            console.log(`Dialog result: ${result}`);
-        });
         const dataRaw = this.form.value;
         const data = {
             ...dataRaw,
             name: dataRaw.name + ' ' + dataRaw.lastName,
         };
         console.log(data);
+        const service = this.servicesTypes.filter(
+            (i) => i.id == data.service_type_id
+        )[0];
+        const request = this.requestTypes.filter(
+            (i) => i.id == data.request_type_id
+        )[0];
+        this.paymentsService.setName_billingValue(data.name);
+        this.paymentsService.setAmountValue(10000);
+        this.paymentsService.setNameItemValue(request.descripcion);
+        this.paymentsService.setDescriptionValue(service.descripcion);
+        this.paymentsService.show.verCodigo = true;
+        const dialogRef = this.dialog.open(PaymentsComponent);
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log(data);
+            console.log({ result });
+        });
     }
 }

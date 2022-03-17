@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { PaymentsComponent } from '../payments/payments.component';
 
 @Component({
-  selector: 'app-pay-online',
-  templateUrl: './pay-online.component.html',
-  styleUrls: ['./pay-online.component.scss']
+    selector: 'app-pay-online',
+    templateUrl: './pay-online.component.html',
+    styleUrls: ['./pay-online.component.scss'],
 })
 export class PayOnlineComponent implements OnInit {
+    constructor(public dialog: MatDialog) {}
 
-  constructor() { }
+    ngOnInit(): void {}
+    payOnLine1(config?: MatDialogConfig) {
+        this.dialog.open(PaymentsComponent, config);
+    }
+    payOnLine() {
+        const dialogRef = this.dialog.open(PaymentsComponent);
 
-  ngOnInit(): void {
-  }
-
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log(`Dialog result: ${result}`);
+        });
+    }
 }

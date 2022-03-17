@@ -46,13 +46,15 @@ div > ul {
             text-align: left;
         }
         &__text {
-            margin-bottom: 24px;
+            margin: 0 auto;
+            margin-bottom: 40px ;
             font-family: $font2;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 150%;
             text-align: center;
+            width: 599px;
         }
         &__img {
             width: 416px;

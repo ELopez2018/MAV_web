@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { SharedModule } from './shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PaymentConfirmationModule } from './payment-confirmation/payment-confirmation.module';
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
           deps: [HttpClient],
       },
   }),
+    PaymentConfirmationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

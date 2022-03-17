@@ -14,37 +14,48 @@ import { SliderTestimonialComponent } from './components/slider-testimonial/slid
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormContactUsComponent } from './components/form-contact-us/form-contact-us.component';
 import { PayOnlineComponent } from './components/pay-online/pay-online.component';
+import { PaymentsComponent } from './components/payments/payments.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule,
-    TranslateModule,
-    CarouselModule,
-    MaterialModule,
-  ],
-  declarations: [
-    NavbarComponent,
-    CardPatnersComponent,
-    CardPracticeComponent,
-    TestimonialCardComponent,
-    FooterComponent,
-    SliderTestimonialComponent,
-    FormContactUsComponent,
-    PayOnlineComponent
-  ],
-  exports: [
-    NavbarComponent,
-    CardPracticeComponent,
-    CardPatnersComponent,
-    MaterialModule,
-    TestimonialCardComponent,
-    FooterComponent,
-    SliderTestimonialComponent,
-    CarouselModule,
-    FormContactUsComponent,
-    PayOnlineComponent
-
-  ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        TranslateModule,
+        CarouselModule,
+        MaterialModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+    ],
+    declarations: [
+        NavbarComponent,
+        CardPatnersComponent,
+        CardPracticeComponent,
+        TestimonialCardComponent,
+        FooterComponent,
+        SliderTestimonialComponent,
+        FormContactUsComponent,
+        PayOnlineComponent,
+        PaymentsComponent,
+    ],
+    exports: [
+        NavbarComponent,
+        CardPracticeComponent,
+        CardPatnersComponent,
+        MaterialModule,
+        TestimonialCardComponent,
+        FooterComponent,
+        SliderTestimonialComponent,
+        CarouselModule,
+        FormContactUsComponent,
+        PayOnlineComponent,
+        PaymentsComponent,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+    ],
 })
 export class SharedModule {}

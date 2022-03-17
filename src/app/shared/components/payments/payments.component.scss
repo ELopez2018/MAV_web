@@ -1,0 +1,67 @@
+*{
+}
+mat-form-field.mat-form-field {
+  margin-right: 5px;
+  width: 100%;
+}
+.payments {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.685);
+    &__code {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    &__container {
+      max-width: 800px;
+    }
+    &__form {
+      position: relative;
+      border: 1px solid rgb(223, 220, 220);
+      padding: 15px;
+
+      &-name-billing {
+      }
+      &-name {
+      }
+      &-code {
+      }
+      &-data{
+      }
+      &-tipo-doc {
+        height: 10px;
+      }
+      &-descrip {
+      }
+    }
+
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+.hide {
+  display: none;
+  text-align: right;
+}
+.alinear {
+  display: flex;
+  // position: absolute;
+  justify-content: end;
+  top: 0;
+  right: 0;
+  width: 100%;
+}

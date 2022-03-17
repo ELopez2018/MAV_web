@@ -1,12 +1,11 @@
 @import '../../../../assets/styles/variables.scss';
 * {
-  font-size:$font2 ;
+    font-size: $font2;
 }
 .main {
-
     background-color: $color1;
     &__container {
-      background-color: $color1;
+        background-color: $color1;
     }
 
     &__slogan {
@@ -14,7 +13,6 @@
     }
     &__img-container {
         position: relative;
-
     }
     &__img1 {
         z-index: 1;
@@ -48,11 +46,11 @@
 }
 @media screen and (min-width: 600px) {
     .main {
-      display: initial;
+        display: initial;
 
-      &__container {
-        background-color: $color1;
-      }
+        &__container {
+            background-color: $color1;
+        }
         &__slogan {
             display: initial;
             padding-top: 74px;
@@ -66,23 +64,26 @@
         &__subtitle {
             font-family: $font1;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 110%;
+            padding-right: 20px;
             color: black;
         }
-        &__slogan-responsive, &__slogan-responsiveII {
-          display: none;
+        &__slogan-responsive,
+        &__slogan-responsiveII {
+            display: none;
         }
         &__img1 {
-          height: 580px;
-          z-index: 1;
-          position: relative;
-          float: right;
-          top: 35px;
-
-      }
+            height: 580px;
+            z-index: 1;
+            position: relative;
+            float: right;
+            top: 0;
+        }
     }
     .cuadro {
-      top: initial;
-      bottom: 0;
-  }
+        top: initial;
+        bottom: 0;
+    }
 }

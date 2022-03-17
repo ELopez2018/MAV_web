@@ -32,6 +32,7 @@
     "ngx-translate": "0.0.1-security",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
+    "uuidv4": "^6.2.12",
     "video.js": "^7.13.3",
     "zone.js": "~0.11.4"
   },

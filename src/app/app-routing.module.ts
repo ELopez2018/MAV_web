@@ -17,6 +17,8 @@ const routes: Routes = [
   { path: 'multimedia', loadChildren: () => import('./multimedia/multimedia.module').then(m => m.MultimediaModule) },
   { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
   { path: 'blog-articulo/:id', loadChildren: () => import('./blog/components/single-blog/single-blog.module').then(m => m.SingleBlogModule) },
+  { path: 'payment-confirmation', loadChildren: () => import('./payment-confirmation/payment-confirmation.module').then(m => m.PaymentConfirmationModule) },
+  { path: 'payment-response', loadChildren: () => import('./payment-response/payment-response.module').then(m => m.PaymentResponseModule) },
   {
     path: '**',
     redirectTo: '/home',

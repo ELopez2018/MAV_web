@@ -4,6 +4,9 @@ mat-form-field.mat-form-field {
   margin-right: 5px;
   width: 100%;
 }
+.logo {
+  width: 23%;
+}
 .payments {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.685);
@@ -64,4 +67,10 @@ input.example-right-align {
   top: 0;
   right: 0;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 40%;
+  }
 }

@@ -18,6 +18,7 @@ import { PaymentsComponent } from './components/payments/payments.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
     imports: [
@@ -29,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
         ReactiveFormsModule,
         MatFormFieldModule,
         MatInputModule,
+        TextMaskModule,
     ],
     declarations: [
         NavbarComponent,

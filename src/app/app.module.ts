@@ -16,6 +16,7 @@ import { SharedModule } from './shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PaymentConfirmationModule } from './payment-confirmation/payment-confirmation.module';
 import { InterceptorService } from './core/interceptors/interceptor.service';
+import { TextMaskModule } from 'angular2-text-mask';
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         SharedModule,
         FontAwesomeModule,
         HttpClientModule,
+        TextMaskModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

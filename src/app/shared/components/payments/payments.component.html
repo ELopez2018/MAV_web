@@ -3,8 +3,8 @@
     <div class="payments__form" [formGroup]="form">
       <div class="row">
         <div class="col-sm-6">
-          <img src="../../../../assets/img/logoII.png" width="50%" alt="">
-          <h3>Formulario de Pagos</h3>
+          <img class="logo" src="../../../../assets/img/logoII.png"  alt="">
+          <h4 class="ps-4">Formulario de Pagos</h4>
         </div>
         <div class="col-sm-6 payments__code">
           <div class="alinear">
@@ -93,20 +93,21 @@
             <div>
               <mat-form-field appearance="fill" floatLabel="always" *ngIf="verSubtotal">
                 <mat-label>Subtotal</mat-label>
-                <input matInput formControlName="tax_base" type="number" class="example-right-align" placeholder="0">
+                <input [textMask]="{mask: mask}" matInput formControlName="tax_base" type="text" class="example-right-align" placeholder="0">
                 <span matPrefix>$&nbsp;</span>
                 <span matSuffix>.00</span>
               </mat-form-field>
               <mat-form-field appearance="fill" floatLabel="always" *ngIf="verTax">
                 <mat-label>Impuestos</mat-label>
-                <input matInput formControlName="tax" type="number" class="example-right-align" placeholder="0">
+                <input [textMask]="{mask: mask}" matInput formControlName="tax" type="text" class="example-right-align" placeholder="0">
                 <span matPrefix>$&nbsp;</span>
                 <span matSuffix>.00</span>
               </mat-form-field>
 
               <mat-form-field appearance="fill" floatLabel="always"*ngIf="verTotal">
                 <mat-label>Monto</mat-label>
-                <input  matInput formControlName="amount" type="number" class="example-right-align" placeholder="0">
+                <input *ngIf="!amountDisabled"  [textMask]="{mask: mask}" matInput formControlName="amount" type="text" class="example-right-align" placeholder="0">
+                <input *ngIf="amountDisabled" [readonly]="true"  matInput formControlName="amount" type="text" class="example-right-align" placeholder="0">
                 <span matPrefix>$&nbsp;</span>
                 <span matSuffix>.00</span>
               </mat-form-field>

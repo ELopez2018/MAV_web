@@ -87,8 +87,10 @@ export class FormContactUsComponent implements OnInit {
         this.paymentsService.setDescriptionValue(service.descripcion);
         this.paymentsService.show.verCodigo = true;
         const dialogRef = this.dialog.open(PaymentsComponent);
+        this.dataService
+            .sendRequestServices(data)
+            .subscribe((resp) => console.log(resp));
         dialogRef.afterClosed().subscribe((result) => {
-            console.log(data);
             console.log({ result });
         });
     }

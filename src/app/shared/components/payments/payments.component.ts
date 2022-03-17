@@ -19,6 +19,7 @@ import {
 } from '@angular/material/form-field';
 import { v4 as uuidv4 } from 'uuid';
 import { PaymentsService } from './payments.service';
+import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 declare var ePayco: any;
 
 @Component({
@@ -40,6 +41,13 @@ export class PaymentsComponent implements OnInit {
     @Input() verTax: boolean = false;
     @Input() verTotal: boolean = true;
     public handler: any;
+    public amountDisabled: boolean = false;
+    public mask = createNumberMask({
+        prefix: '',
+        suffix: '', // This will put the dollar sign at the end, with a space.
+        includeThousandsSeparator: true,
+        thousandsSeparatorSymbol: ',',
+    });
     constructor(
         private fb: FormBuilder,
         private paymentsService: PaymentsService
@@ -140,5 +148,7 @@ export class PaymentsComponent implements OnInit {
         this.form.get('tax_base')?.setValue(values.tax_base);
         this.form.get('tax')?.setValue(values.tax);
         this.form.get('amount')?.setValue(values.amount);
+        this.amountDisabled = !!values.amount;
+        console.log(this.amountDisabled);
     }
 }

@@ -8,6 +8,7 @@ import { map, catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { ServicesTypesModel } from '@models/services-types.model';
+import { IRequestService } from '@interfaces/request-services.interfacte';
 
 @Injectable({
     providedIn: 'root',
@@ -35,5 +36,13 @@ export class DataService {
                     return resp.data;
                 })
             );
+    }
+
+    public sendRequestServices(data: IRequestService): Observable<any> {
+        return this.http.post<any>(this.urlApi + 'requestServices', data).pipe(
+            map((resp: any) => {
+                return resp.data;
+            })
+        );
     }
 }

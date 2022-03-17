@@ -18,6 +18,7 @@ import {
     MatFormFieldControl,
 } from '@angular/material/form-field';
 import { v4 as uuidv4 } from 'uuid';
+import { PaymentsService } from './payments.service';
 declare var ePayco: any;
 
 @Component({
@@ -39,20 +40,24 @@ export class PaymentsComponent implements OnInit {
     @Input() verTax: boolean = false;
     @Input() verTotal: boolean = true;
     public handler: any;
-    constructor(private fb: FormBuilder) {
+    constructor(
+        private fb: FormBuilder,
+        private paymentsService: PaymentsService
+    ) {
         this.initForm();
     }
     inputAppearance = 'outline';
     ngOnInit(): void {
         this.confighandler();
+        this.showFields();
+        this.setValues();
     }
 
     initForm() {
-        const codigo = Date.now();
         // const codigo = uuidv4();
         this.form = this.fb.group({
             // Datos del Producto
-            invoice: new FormControl(codigo, [Validators.required]),
+            invoice: new FormControl(null, [Validators.required]),
             name: new FormControl(null, [Validators.required]),
             description: new FormControl(null, [Validators.required]),
 
@@ -95,5 +100,25 @@ export class PaymentsComponent implements OnInit {
     pagar() {
         const data = this.form.value;
         this.handler.open(data);
+    }
+
+    public showFields() {
+        console.log(this.paymentsService.values.invoice);
+        this.verCodigo = this.paymentsService.show.verCodigo;
+        this.verTipoDoc = this.paymentsService.show.verTipoDoc;
+        this.verNumeroDoc = this.paymentsService.show.verNumeroDoc;
+        this.verNameBilling = this.paymentsService.show.verNameBilling;
+        this.verNameConcepto = this.paymentsService.show.verNameConcepto;
+        this.verDescripcion = this.paymentsService.show.verDescripcion;
+        this.verTelefono = this.paymentsService.show.verTelefono;
+        this.verDireccion = this.paymentsService.show.verDireccion;
+        this.verSubtotal = this.paymentsService.show.verSubtotal;
+        this.verTax = this.paymentsService.show.verTax;
+        this.verTotal = this.paymentsService.show.verTotal;
+    }
+
+    public setValues() {
+        const codigo = this.paymentsService.values.invoice || Date.now();
+        this.form.get('invoice')?.setValue(codigo);
     }
 }

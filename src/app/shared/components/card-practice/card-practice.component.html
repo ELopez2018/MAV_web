@@ -1,9 +1,11 @@
 <div class="card">
-  <div class="col-sm-4 mb-2">
+  <div class="col-sm-4">
     <img class="card-img-top imgEspeci" [src]="especialidad.icon" alt="img">
   </div>
-  <div class="">
-    <h5 class="card-title ">{{ especialidad.title }}</h5>
-    <div class="card-text">{{ especialidad.description }}</div>
-  </div>
+  <h5 class="card__title ">{{ especialidad.title }}</h5>
+  <ul>
+    <li class="card__text" *ngFor="let item of especialidad.description" [innerHtml]="item">
+      {{ item }}
+    </li>
+  </ul>
 </div>

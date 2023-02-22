@@ -1,15 +1,44 @@
-.example-card {
-  margin-right: 24px;
-  max-width: 394px;
-  height: 288px;
-  background: #fafafa;
-  border: 1px solid #dddddd;
-//   box-sizing: border-box;
-  border-radius: 2px;
+.testimonials-card {
+    padding: 10px;
+    overflow: hidden;
+    margin-right: 24px;
+    max-width: 394px;
+    height: 288px;
+    background: #fafafa;
+    border: 1px solid #dddddd;
+    //   box-sizing: border-box;
+    border-radius: 2px;
+    &__header {
+        display: flex;
+        flex-direction: row;
+    }
+    &__img-container {
+        padding: 10px 0 0 10px;
+        width: 80px;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+    &__img {
+        height: auto;
+        margin: auto;
+        border-radius: 50%;
+    }
+    &__body {
+        padding: 20px;
+        text-align: justify;
+    }
+    &__info {
+        padding: 15px 0 0 40px;
+    }
+}
+.fondo {
+    width: 350%;
+    height: 400px;
+    background-color: red;
 }
 .star {
-    font-size: 24px;
-    background-color: #F8D20C;
+    font-size: 20px;
+    background-color: #05971e;
     margin-right: 4px;
     color: white;
-  }
+}

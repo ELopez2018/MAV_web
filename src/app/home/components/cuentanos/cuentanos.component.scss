@@ -1,0 +1,59 @@
+@import '../../../../assets/styles/variables.scss';
+.tellus {
+    overflow: hidden;
+    font-family: $font2;
+    text-align: center;
+    background-color: $color1;
+    position: relative;
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__img1 {
+        display: none;
+    }
+    &__title {
+        font-family: $font1;
+        font-weight: 700;
+        position: absolute;
+        top: 40%;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        p {
+            margin-top: 10px;
+            font-size: 1rem;
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__call-now {
+        position: absolute;
+        color: white;
+        top: 75%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .tellus {
+        &_img {
+            height: 384px;
+            width: 100%;
+        }
+        &__title {
+            display: block;
+            width: 746px;
+            text-align: center;
+            left: calc((1440px - 746px) / 2);
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+            margin-top: -40px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import '../../../../assets/styles/variables.scss';
+.tracing {
+    font-family: $font2;
+    text-align: center;
+    background-color: $color;
+    padding: 20px 5%;
+    overflow: hidden;
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__img1 {
+        display: none;
+    }
+    &__title,
+    &__text {
+        font-family: $font2;
+        font-weight: 400;
+    }
+    &__subtitle {
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .tracing {
+        font-family: $font2;
+        text-align: left;
+        background-color: $color;
+        padding: 20px 104px;
+        overflow: hidden;
+        &__img1 {
+            display: initial;
+            margin-bottom: 40px;
+            margin-left: -122px;
+        }
+        &__img2 {
+            display: initial;
+            float: right;
+        }
+        &__container {
+            display: flex;
+            flex-direction: row;
+        }
+        &__subtitle {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+        }
+        &__container-text {
+          padding-top: 95px;
+        }
+        &__text {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+}

@@ -2,13 +2,15 @@
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
 // Plus imports for other components in your app.
+@import './assets/styles/variables.scss';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '~video.js/dist/video-js.css';
+@import './assets/styles/variables.scss';
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat.core();
-
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -21,13 +23,15 @@ $web-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$web-theme: mat.define-light-theme((
-  color: (
-    primary: $web-primary,
-    accent: $web-accent,
-    warn: $web-warn,
-  )
-));
+$web-theme: mat.define-light-theme(
+    (
+        color: (
+            primary: $web-primary,
+            accent: $web-accent,
+            warn: $web-warn,
+        ),
+    )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -36,11 +40,109 @@ $web-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; padding: 0; box-sizing: border-box; }
-body {  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.container-fluid {
-  max-width: 1440px;
-  position: relative;
+html,
+body {
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
+.container-fluid {
+    max-width: 1440px;
+    position: relative;
+}
+
+.cuadro {
+    width: 100%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background: $color3;
+}
+.cuadro394x387 {
+    width: 394px;
+    height: 387px;
+    background: $color3;
+    position: absolute;
+}
+.title-especial {
+    font-family: $font1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-family: $font2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 110%;
+}
+.btn-action {
+    width: 296px;
+    height: 56px;
+    margin-top: 39px;
+    text-align: center;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    background: #386ae9;
+}
+.description {
+    padding: 24px 0;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.title-especial::after {
+    content: '';
+    height: 1px;
+    width: 104px;
+    background: #000000;
+    position: absolute;
+    bottom: 12px;
+    z-index: 10;
+}
+
+.readMore {
+    font-family: Spectral;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.pt-6 {
+    padding-top: 90px;
+}
+@media screen and (min-width: 600px) {
+    .cuadro {
+        width: 484px;
+        height: 528px;
+        background: $color3;
+    }
+}

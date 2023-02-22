@@ -1,0 +1,129 @@
+<div class="payments" mat-dialog-content>
+  <div class="payments__container">
+    <div class="payments__form" [formGroup]="form">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="logo" src="../../../../assets/img/logoII.png"  alt="">
+          <h4 class="ps-4">Formulario de Pagos</h4>
+        </div>
+        <div class="col-sm-6 payments__code">
+          <div class="alinear">
+            <mat-form-field class="payments__form-code" appearance="outline" floatLabel="always" *ngIf="verCodigo" >
+              <mat-label>Codigo</mat-label>
+              <input [disabled]="true" formControlName="invoice" matInput class="hide">
+              <span matInput>{{ code }}</span>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="payments__form-data">
+        <div class="row">
+          <div class="col-sm-2" *ngIf="verTipoDoc">
+            <mat-form-field class="payments__form-tipo-doc" appearance="fill" >
+              <mat-label>Tipo</mat-label>
+              <mat-select formControlName="type_doc_billing">
+                <mat-option value="cc">C.C.</mat-option>
+                <mat-option value="ce">C.E.</mat-option>
+                <mat-option value="nit">NIT</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-3" *ngIf="verNumeroDoc">
+            <mat-form-field appearance="fill" floatLabel="always" >
+              <mat-label>Numero de Documento</mat-label>
+              <input matInput formControlName="number_doc_billing" type="number" class="example-right-align">
+            </mat-form-field>
+          </div>
+          <div class="col" *ngIf="verNameBilling">
+            <mat-form-field class="payments__form-name-billing" appearance="fill" floatLabel="always" >
+              <mat-label>Nombres y Apellidos</mat-label>
+              <input formControlName="name_billing" matInput type="text">
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4"  *ngIf="verNameConcepto">
+            <mat-form-field class="payments__form-name" appearance="fill" floatLabel="always">
+              <mat-label>Concepto</mat-label>
+              <input formControlName="name" matInput type="text">
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </div>
+          <div class="col-sm-8" *ngIf="verDescripcion">
+            <mat-form-field class="payments__form-descrip" appearance="fill" floatLabel="always" >
+              <mat-label>Descripcion</mat-label>
+              <input formControlName="description" matInput type="text" >
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-sm-4"  *ngIf="verTelefono">
+            <mat-form-field appearance="fill">
+              <mat-label>Telefono</mat-label>
+              <input type="tel" formControlName="mobilephone_billing" matInput>
+              <mat-icon matSuffix>phone</mat-icon>
+              <!-- <mat-hint>Include area code</mat-hint> -->
+            </mat-form-field>
+          </div>
+          <div class="col-sm-8" *ngIf="verDireccion">
+            <mat-form-field appearance="fill" floatLabel="always" class="payments__form-name" >
+              <mat-label>Direcciòn</mat-label>
+              <input formControlName="address_billing" matInput type="text">
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8  d-flex align-items-center">
+            <div>
+              <!-- <button mat-button mat-dialog-close>Cancel</button> -->
+              <button mat-raised-button color="warn" mat-dialog-close>Cancelar</button>
+              <button mat-raised-button color="primary" (click)="pagar()" >Pagar</button>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div>
+              <mat-form-field appearance="fill" floatLabel="always" *ngIf="verSubtotal">
+                <mat-label>Subtotal</mat-label>
+                <input [textMask]="{mask: mask}" matInput formControlName="tax_base" type="text" class="example-right-align" placeholder="0">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+              <mat-form-field appearance="fill" floatLabel="always" *ngIf="verTax">
+                <mat-label>Impuestos</mat-label>
+                <input [textMask]="{mask: mask}" matInput formControlName="tax" type="text" class="example-right-align" placeholder="0">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill" floatLabel="always"*ngIf="verTotal">
+                <mat-label>Monto</mat-label>
+                <input *ngIf="!amountDisabled"  [textMask]="{mask: mask}" matInput formControlName="amount" type="text" class="example-right-align" placeholder="0">
+                <input *ngIf="amountDisabled" [readonly]="true"  matInput formControlName="amount" type="text" class="example-right-align" placeholder="0">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-sm-10"></div>
+      <div class="col-sm-2">
+
+      </div>
+    </div>
+  </div>
+</div>

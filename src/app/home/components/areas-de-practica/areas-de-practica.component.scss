@@ -1,0 +1,62 @@
+@import '../../../../assets/styles/variables.scss';
+.areapractica {
+    background-color: $color1;
+    text-align: center;
+    padding: 10px 10px;
+    overflow: hidden;
+    &__title {
+        font-family: $font2;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 150%;
+    }
+    &__title2 {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 120%;
+        text-align: justify;
+        padding: 10px;
+    }
+    &__title3 {
+        font-family: $font2;
+        font-style: normal;
+        font-size: 0.7rem;
+        line-height: 150%;
+    }
+}
+.col-sm-8 {
+    margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+    .areapractica {
+        height: 1703px;
+        overflow: hidden;
+        background-color: $color1;
+        padding-top: 64px;
+        padding: 10px 104px;
+        &__title {
+            margin: 80px 0 0 0;
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+        }
+        &__title2 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            line-height: 150%;
+            width: 814px;
+            margin: 0 auto;
+        }
+    }
+}
+app-card-practice {
+    margin: 0 auto;
+}

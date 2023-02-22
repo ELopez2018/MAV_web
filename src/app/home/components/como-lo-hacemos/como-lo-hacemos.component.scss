@@ -1,0 +1,70 @@
+@import '../../../../assets/styles/variables.scss';
+.clh {
+    padding: 15px;
+    background-color: $color2;
+    text-align: center;
+    overflow: hidden;
+    &__title {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 120%;
+        margin: 24px 0;
+    }
+    &__img {
+        width: 90%;
+    }
+    &__text {
+        margin-bottom: 24px;
+    }
+    &__title-1 {
+        margin-top: 20px;
+    }
+}
+div > ul {
+    text-align: left;
+}
+@media screen and (min-width: 600px) {
+    .clh {
+        margin-top: 88px;
+        font-family: $font2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        overflow: hidden;
+        &__title {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 120%;
+            margin: 24px 0;
+        }
+        &__subtitle {
+            text-align: left;
+        }
+        &__text {
+            margin: 0 auto;
+            margin-bottom: 40px ;
+            font-family: $font2;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            width: 599px;
+        }
+        &__img {
+            width: 416px;
+        }
+        &__title-2{
+          margin-top: 46px;
+        }
+    }
+}
+
+div > b > span {
+    color: $color3;
+}

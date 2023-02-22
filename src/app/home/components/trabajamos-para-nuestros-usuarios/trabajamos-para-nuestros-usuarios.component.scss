@@ -1,0 +1,110 @@
+@import '../../../../assets/styles/variables.scss';
+.jobBy {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    padding: 15px;
+    background-color: $color2;
+    text-align: center;
+    &__title {
+        font-family: $font2;
+        font-weight: 400;
+    }
+    &__subtitle,
+    &__statics {
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    &__subtitle {
+        margin: 24px 0 20px 0;
+    }
+    &__statics {
+        color: $color3;
+        font-size: 2rem;
+        p small {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &__statics-container {
+        width: 70%;
+        padding: 40px 0;
+        border: 1px solid rgb(230, 229, 229);
+        margin: 10px auto;
+    }
+    &__metrics {
+        display: flex;
+        flex-direction: column;
+    }
+    .data {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        margin: 0 auto 100px auto;
+        padding: 0;
+    }
+
+}
+@media screen and (min-width: 600px) {
+  .jobBy {
+      background-color: $color2;
+      height: 460px;
+      &__metrics {
+          display: flex;
+          flex-direction: row;
+      }
+      &__title {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 150%;
+          text-align: center;
+      }
+      &__statics-container {
+          width: 308px;
+          padding: 40px;
+          border: 1px solid rgb(230, 229, 229);
+          margin: 10px auto;
+          p small {
+              padding: 0;
+              margin: 0;
+              text-align: left;
+              font-family: $font2;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 150%;
+              display: flex;
+              align-items: flex-start;
+              color: #787878;
+          }
+      }
+      &__statics {
+          font-family: $font2;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 40px;
+          // line-height: 150%;
+          display: flex;
+          align-items: flex-start;
+          color: $color3;
+      }
+      &__subtitle {
+          font-family: $font1;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 120%;
+          text-align: center;
+          color: #111e2d;
+          margin: 24px 0 40px 0;
+      }
+  }
+  .data {
+      width: 1022px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      margin: 0 auto;
+      padding: 30px;
+  }
+}
